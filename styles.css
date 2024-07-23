@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-size: cover;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url('background-mobile.jpg'); /* Background image for mobile version */
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        background-image: url('background-tablet.jpg'); /* Background image for tablet and larger displays */
+    }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px neon;
+    position: fixed;
+    bottom: 20px;
+    width: 90%;
+    max-width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#sleepButton {
+    background-color: green; /* Start button color */
+}
+
+#sleepButton.end {
+    background-color: red; /* End button color */
+}
+
+h1 {
+    text-shadow: 0 0 10px neon;
+    font-size: 36px;
+}
+
+.neon-box {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px neon;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #f0f0f0; /* Light background color */
+    color: #333; /* Dark text color */
+    width: auto;
+}
+
+.time-info {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.centered-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.total-sleep-box {
+    font-size: 48px;
+    padding: 20px;
+}
+
+.start-end-box {
+    font-size: 24px;
+    padding: 10px;
+}
